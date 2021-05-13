@@ -18,12 +18,14 @@ export const StyledMenuItem = styled.li<{ selected: boolean }>`
 
   svg {
     margin-right: 16px;
+    color: ${({ selected }) => (selected ? "#303b5b" : "#fff")};
   }
 
   a,
   :active {
     color: ${({ selected }) => (selected ? "#303b5b" : "#fff")};
     text-decoration: none;
+    cursor: pointer;
   }
 
   &::before {
@@ -34,8 +36,7 @@ export const StyledMenuItem = styled.li<{ selected: boolean }>`
     height: 65px;
     width: 50px;
     border-bottom-right-radius: 30px;
-    box-shadow: ${({ selected }) =>
-      selected ? "0 50px 0 0 #eff2f9" : "none"};
+    box-shadow: ${({ selected }) => (selected ? "0 50px 0 0 #eff2f9" : "none")};
     background-color: transparent;
   }
 

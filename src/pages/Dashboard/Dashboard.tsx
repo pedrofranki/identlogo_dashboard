@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import NavBar from "../../components/NavBar";
 import ContentBackground from "../../components/ContentBackgroud";
+import CardGeneralInformation from "../../components/CardGeneralInformation";
 import { StyledGrid } from "./styles";
 
 const listMenu = [
@@ -48,7 +49,11 @@ const Dashboard = () => {
   return (
     <StyledGrid>
       <NavBar listMenu={listMenu} />
-      <ContentBackground />
+      <ContentBackground
+        generalInformation={listMenu.map((i) => (
+          <CardGeneralInformation />
+        ))}
+      />
     </StyledGrid>
   );
 };

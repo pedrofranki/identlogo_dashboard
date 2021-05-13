@@ -14,7 +14,6 @@ export const StyledNavBar = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin: 10px 25px;
 
     span {
@@ -37,6 +36,6 @@ export const StyledNavBar = styled.div`
   ul {
     list-style: none;
     font-size: 16px;
-    
+    margin-top: -20px;
   }
 `;
