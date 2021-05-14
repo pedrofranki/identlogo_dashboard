@@ -11,6 +11,12 @@ export const StyledContentBackground = styled.div`
     display: grid;
     width: 100%;
     grid-gap: 12px;
-    grid-template-columns: repeat(4, 3fr)
+    grid-template-columns: repeat(4, 3fr);
+    margin-bottom: 32px;
+  }
+
+  .attendance-history{
+    width: 100%;
+    
   }
 `;

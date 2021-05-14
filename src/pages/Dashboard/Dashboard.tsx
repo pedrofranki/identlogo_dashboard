@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "../../components/NavBar";
 import ContentBackground from "../../components/ContentBackgroud";
 import CardGeneralInformation from "../../components/CardGeneralInformation";
+import TreatmentList from "../../components/TreatmentList";
 import { StyledGrid } from "./styles";
 
 const listMenu = [
@@ -53,6 +54,7 @@ const Dashboard = () => {
         generalInformation={listMenu.map((i) => (
           <CardGeneralInformation />
         ))}
+        attendanceHistory={<TreatmentList />}
       />
     </StyledGrid>
   );
